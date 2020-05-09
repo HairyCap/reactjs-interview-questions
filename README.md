@@ -1,4 +1,4 @@
-# React Interview Questions & Answers
+# React 面试问题 & 答案
 
 > Click :star:if you like the project. Pull Request are highly appreciated. Follow me [@SudheerJonna](https://twitter.com/SudheerJonna) for technical updates.
 
@@ -6,12 +6,12 @@
 
 You can download the PDF and Epub version of this repository from the latest run on the [actions tab](https://github.com/sudheerj/reactjs-interview-questions/actions).
 
-### Table of Contents
+### 目录
 
-| No. | Questions |
+| No. | 问题 |
 | --- | --------- |
-|   | **Core React** |
-|1  | [What is React?](#what-is-react) |
+|   | **React 核心** |
+|1  | [React是什么?](#what-is-react) |
 |2  | [What are the major features of React?](#what-are-the-major-features-of-react) |
 |3  | [What is JSX?](#what-is-jsx) |
 |4  | [What is the difference between Element and Component?](#what-is-the-difference-between-element-and-component) |
@@ -347,31 +347,29 @@ You can download the PDF and Epub version of this repository from the latest run
 
 
     
-1. ### What is React?
+1. ### React是什么?
 
-    React is an **open-source frontend JavaScript library** which is used for building user interfaces especially for single page applications. It is used for handling view layer for web and mobile apps. React was created by [Jordan Walke](https://github.com/jordwalke), a software engineer working for Facebook. React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012.
+    React是一个**开源前端Jaascript框架**用于构建用户交互界面，主要为单页面应用。用来管理web前端及移动端应用的试图层。React创建人是[Jordan Walke](https://github.com/jordwalke)，他是一名来自facebook的软件工程师。React于2011年首次部署在Facebook的News Feed上，2012年首次部署在Instagram上。
+
+   **[⬆ Back to Top](#table-of-contents)**
+    
+2. ### React的主要特点是什么?
+
+    React的主要特点是:
+
+    * 考虑到RealDOM操作昂贵，它使用**VirtualDOM**代替RealDOM。
+    * 支持 **服务端渲染**.
+    * 遵循**单向**数据流或数据绑定。
+    * 使用**可重用/可组合** UI组件来开发视图。
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-2. ### What are the major features of React?
+3. ### JSX什么是?
 
-    The major features of React are:
-
-    * It uses **VirtualDOM** instead RealDOM considering that RealDOM manipulations are expensive.
-    * Supports **server-side rendering**.
-    * Follows **Unidirectional** data flow or data binding.
-    * Uses **reusable/composable** UI components to develop the view.
-
-
-   **[⬆ Back to Top](#table-of-contents)**
+    *JSX*是类似XML的ECMAScript语法扩展（*JavaScript XML* 的缩写）。基本上就是为`React.createElement()`函数提供的语法糖，给我们JavaScript和似HTML模板语法的表达能力
+    在下面的例子中 `<h1>` 标签中的文字返回JavaScript函数给render函数。
     
-3. ### What is JSX?
-
-    *JSX* is a XML-like syntax extension to ECMAScript (the acronym stands for *JavaScript XML*). Basically it just provides syntactic sugar for the `React.createElement()` function, giving us expressiveness of JavaScript along with HTML like template syntax.
-
-    In the example below text inside `<h1>` tag return as JavaScript function to the render function.
-
     ```jsx harmony
     class App extends React.Component {
       render() {
@@ -387,7 +385,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-4. ### What is the difference between Element and Component?
+4. ### 元素和组件之间的区别是什么？
 
     An *Element* is a plain object describing what you want to appear on the screen in terms of the DOM nodes or other components. *Elements* can contain other *Elements* in their props. Creating a React element is cheap. Once an element is created, it is never mutated.
 
